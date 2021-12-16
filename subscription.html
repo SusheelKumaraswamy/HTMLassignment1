@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscription</title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+        span{
+            font-style: italic;
+
+        }
+        input[type=text]{
+            /* background: transparent; */
+            border: none;
+            border-bottom: 1px solid ;
+            margin-left: 2cm;
+            margin-right: 2cm;
+            
+
+        }
+
+        input[type=tel]{
+            border: none;
+            border-bottom: 1px solid ;
+            margin-left: 2cm;
+            margin-right: 2cm;
+        }
+
+        input[type=radio]{
+            margin-left: 2cm;
+    
+            
+        }
+
+        input[type=checkbox]{
+            margin-left: 2cm;
+            
+        }
+        textarea{
+            border: none;
+            border-bottom: 1px solid ;
+            margin-left: 2cm;
+            /* display: inline-block; */
+        }
+
+        label{
+            margin-left: 2cm;
+            display: inline-block;
+            font-style: italic;
+        }
+        
+        
+
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Yes! I want to Subscribe to <span>Mag-O-Zine</span></h1>
+    <form id="formid">
+        <span>
+            <input type="text" name="fname" id="fname" placeholder="firstname" required>
+        </span>
+        <span>
+            <input type="text" name="lname" id="lname" placeholder="lastname" required><br>
+        </span>
+        <span id="labelnfame">
+            <label for="fname">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        </span>
+        <span id="labelnlame">
+            <label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name</label><br><br><br>
+        </span>
+        <textarea name="text" id="text" cols="70" rows="2" form="formid" placeholder="address"></textarea><br><br>
+        <span><label for="text">Address</label></span><br><br>
+        <span>
+            <input type="text" name="city" id="city" placeholder="city" required>
+        </span>
+        <span>
+            <input type="text" name="state" id="state" placeholder="state" required>
+        </span>
+        <span>
+            <input type="tel" name="pincode" id="pincode" placeholder="pincode" pattern="[0-9]{6}"required><br>
+        </span>
+        <label for="city">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="state">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="pincode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pincode</label><br><br>
+        <label for="radio"><b>Subscribe For:</b></label>
+        <input type="radio" name="radio" id="radio" value="1year"><b>1 Year Subscription(19.5$)</b>
+        <input type="radio" name="radio" id="radio" value="2year"><b>2 Year Subscription(35$)</b><br><br>
+
+        <label for="checkbox"><b>Send me more information about:</b></label><br>
+
+        <input type="checkbox" name="compzine" id="compzine">  <b>Computer_Zine</b><br>
+        <input type="checkbox" name="fishzine" id="fishzine">  <b>Fishing_Zine</b><br>
+        <input type="checkbox" name="catozine" id="catozine">  <b>Cat_O_Zine</b><br>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseForm</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 110px;
+        }
+
+        input[type="text"]{
+            display: inline-block;
+            width:500px;
+        }
+
+        
+        h2{
+            background-color: rgb(96, 18, 240);
+            color: brown;
+            text-align: center;
+            padding: 20px;
+        }
+        h5{
+            background-color: aqua;
+            color: brown;
+            text-align: right;
+        }
+        #form1{
+            background-color:burlywood
+        }
+
+        body{
+            background-color:aqua;
+        }
+        h6{
+            color: chocolate;
+            text-align: center;
+            
+        }
+        table,th,tr,td{
+            border:1px dotted red;
+        }
+        h4 a:hover{
+            color: red;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <h2>Contact us</h2>
+    <h5><a href="tel:8903641398">Contact at:8903641398</a><br><a href="mailto:susi31398@gmail.com">Mail to:susi31398@gmail.com</a></h5>
+    <form id="form1">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" required autofocus placeholder="firstname"><br><br>
+        <label for="fname">Last Name:</label>
+        <input type="text" name="lname" id="lname" required  placeholder="lastname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required autofocus placeholder="email"><br><br>
+        <label for="telephone">Mobile Number</label>
+        <input type="tel" name="telephone" id="telephoneid" placeholder="Mobile Number" pattern="[0-9]{10}" required><br><br>
+        <input type="radio" name="radio" id="radio" value="self">SelfEmployeed
+        <input type="radio" name="radio" id="radio" value="work">Working Professional<br><br>
+
+        <label for="comment">Query:</label><br>
+        <textarea rows="10" cols="50" name="comment" form="form1" placeholder="Enter your Text here" required></textarea><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <h6>@Copyright rights invloved 2021</h6>
+    <h3>Contact Based on time Zone:</h3>
+    <table>
+        <tr>
+          <th>Contact</th>
+          <th>Timing</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td><a href="mailto:jorge@gmail.com">Jorge</a></td>
+          <td>8:00 AM to 5:15 PM</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td><a href="mailto:susi31398@gmail.com">Susheel</a></td>
+          <td>9:00 AM to 7:30 PM</td>
+          <td>India</td>
+        </tr>
+      </table>
+
+      <h4><a href="https://www.google.com/">Google here</a></h4>
+</body>
+</html>
